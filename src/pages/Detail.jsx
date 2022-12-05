@@ -8,7 +8,7 @@ function Detail() {
             <Sidebar className="lg:col-span-1" />
 
             <div className='pr-[10%] pl-[10%] pt-5 col-span-6 lg:col-span-5'>
-
+            
                 <p className='text-4xl pb-5'>Immersive Dashboard</p>
                 <p className='text-2xl pb-5'>Profile & Comment</p>
                 <div className='grid grid-cols-8 pb-5'>
@@ -37,7 +37,7 @@ function Detail() {
                     </div>
                 </div>
                 <div className='w-full pb-5 flex items-center justify-center'>
-                    <button className='btn btn-primary'>Add Comment</button>
+                    <button className='btn bg-purple-500 text-white'>Add Comment</button>
                 </div>
                 <div className='flex flex-col gap-5'>
                     <p className='rounded border-2 min-h-12'>

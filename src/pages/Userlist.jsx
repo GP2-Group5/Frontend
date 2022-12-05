@@ -2,7 +2,8 @@ import React from 'react'
 
 import Sidebar from '../components/Sidebar'
 
-import {AiFillDelete, AiFillEdit} from 'react-icons/ai'
+import { IconContext } from "react-icons";
+import { AiFillDelete, AiFillEdit } from 'react-icons/ai'
 
 function Userlist() {
   return (
@@ -14,25 +15,25 @@ function Userlist() {
         <p className='text-4xl pb-5'>Immersive Dashboard</p>
         <p className='text-2xl pb-5'>User List</p>
         <div className='grid grid-cols-3 gap-6 pb-5'>
-        <select class="flex w-full bg-[#242424] text-white rounded h-12 border">
-          <option>Mentee</option>
-          <option>Mentor</option>
-          <option>yoi bro</option>
-        </select>
-        <select class="flex w-full bg-[#242424] text-white rounded h-12 border">
-          <option className='pl-5'>FE</option>
-          <option>BE</option>
-          <option>QE</option>
-        </select>
-        <select class="flex w-full bg-[#242424] text-white rounded h-12 border">
-          <option className='pl-5'>A</option>
-          <option>B</option>
-          <option>C</option>
-        </select>
+          <select class="flex w-full bg-[#242424] text-white rounded h-12 border pl-5">
+            <option>Mentee</option>
+            <option>Mentor</option>
+            <option>yoi bro</option>
+          </select>
+          <select class="flex w-full bg-[#242424] text-white rounded h-12 border pl-5">
+            <option >FE</option>
+            <option>BE</option>
+            <option>QE</option>
+          </select>
+          <select class="flex w-full bg-[#242424] text-white rounded h-12 border pl-5">
+            <option >A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
         </div>
-        <div className="overflow-x-auto bg-none">
-          <table className="table w-full bg-none">
-            <thead>
+        <div className="overflow-x-auto bg-[#242424]">
+          <table className="table rounded-xl w-full bg-[#242424]">
+            <thead className=''>
               <tr>
                 <th className='w-[10%]'>ID</th>
                 <th className='w-[40%]'>Name</th>
@@ -44,31 +45,35 @@ function Userlist() {
             </thead>
             <tbody>
 
-              <tr>
+              <tr className='hover'>
                 <th>1</th>
                 <td>Wendy</td>
                 <td>Mentee</td>
-                <td>FE10</td>
-                <td className='items-center justify-center'><AiFillEdit/></td>
-                <td ><AiFillDelete className='items-center justify-center'/></td>
+                <td>FE</td>
+                <td className='items-center justify-center'><AiFillEdit /></td>
+                <td ><AiFillDelete className='items-center justify-center' /></td>
               </tr>
 
-              <tr>
+              <tr className='hover'>
                 <th>2</th>
                 <td>Franky</td>
                 <td>Mentee</td>
-                <td>BE13</td>
-                <td className='items-center justify-center'><AiFillEdit/></td>
-                <td><AiFillDelete/></td>
+                <td>BE</td>
+                <td className='items-center justify-center'><AiFillEdit /></td>
+                <td><AiFillDelete /></td>
               </tr>
 
-              <tr>
+              <tr className='hover'>
                 <th>3</th>
                 <td>Bagas</td>
                 <td>Mentor</td>
                 <td></td>
-                <td className='items-center justify-center'><AiFillEdit/></td>
-                <td><AiFillDelete/></td>
+                <td className='items-center justify-center'>
+                  <IconContext.Provider value={{ color: "white", className: "items-center justify-center hover:hidden" }}>
+                    <AiFillEdit />
+                  </IconContext.Provider>
+                </td>
+                <td><AiFillDelete /></td>
               </tr>
             </tbody>
           </table>

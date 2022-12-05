@@ -6,6 +6,7 @@ import Login from './pages/Login'
 import Sidebar from './components/Sidebar'
 import Userlist from './pages/Userlist'
 import Detail from './pages/Detail'
+import Dashboard from './pages/Dashboard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       {/* <Sidebar/> */}
       {<Userlist/>}
       {<Detail/>}
+      {<Dashboard/>}
     </div>
   )
 }
