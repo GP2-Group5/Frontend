@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import Sidebar from '../components/Sidebar'
+import Sidebar from "../components/Sidebar";
 
 import { IconContext } from "react-icons";
 import { AiFillDelete, AiFillEdit } from 'react-icons/ai'
 
 function Userlist() {
   return (
-    <div className='grid grid-cols-6 w-full min-h-screen'>
+    <div className="grid grid-cols-6 w-full min-h-screen">
       <Sidebar className="lg:col-span-1" />
 
       <div className='pr-[10%] pl-[10%] pt-5 col-span-6 lg:col-span-5'>
@@ -35,12 +35,12 @@ function Userlist() {
           <table className="table rounded-xl w-full bg-[#242424]">
             <thead className=''>
               <tr>
-                <th className='w-[10%]'>ID</th>
-                <th className='w-[40%]'>Name</th>
-                <th className='w-[15%]'>Role</th>
-                <th className='w-[15%]'>Class</th>
-                <th className='w-[10%]'></th>
-                <th className='w-[10%]'></th>
+                <th className="w-[10%]">ID</th>
+                <th className="w-[40%]">Name</th>
+                <th className="w-[15%]">Role</th>
+                <th className="w-[15%]">Class</th>
+                <th className="w-[10%]"></th>
+                <th className="w-[10%]"></th>
               </tr>
             </thead>
             <tbody>
@@ -80,7 +80,7 @@ function Userlist() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Userlist
+export default Userlist;
