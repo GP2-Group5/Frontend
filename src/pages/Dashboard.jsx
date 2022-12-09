@@ -1,7 +1,10 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 
+import { useLocation, useNavigate } from 'react-router-dom'
+
 function Dashboard() {
+  
     return (
         <div>
             <div className='grid grid-cols-6 w-full min-h-screen'>
